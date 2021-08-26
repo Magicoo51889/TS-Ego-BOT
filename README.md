@@ -13,3 +13,5 @@ Features:
 * Yarn bump command
 * Bump plugin & TypeScript plugin
 * Cool build / bundle commands (yarn.build)
+
+Copy of Alii's EGO bot
