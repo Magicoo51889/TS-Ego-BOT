@@ -1,6 +1,6 @@
-import { Client } from 'discord.js';
-import {model, Schema, Document, connect} from "mongoose";
+import { model, Schema, Document, connect} from "mongoose";
 import "dotenv/config";
+const { Client } = require('discord.js') 
 
 connect("mongodb+srv://Magicoo51889:<1tgw6K1CquZC5Cj3>@cluster0.7xetp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
   useNewUrlParser: true,
@@ -50,7 +50,10 @@ client.on("message", async message => {
     }
 
     message.channel.send(`<@${user.discordId}>'s total ego size: ${user.ego}ft`);
-  }
+  } 
 });
 
-client.login().then(() => console.log("Ego logged in"));
+client.once('ready', () => {
+  console.log("Ego logged in")
+});
+
