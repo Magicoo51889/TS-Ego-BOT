@@ -53,4 +53,4 @@ client.on("message", async message => {
   }
 });
 
-client.login().then(() => console.log("ego logged in"));
+client.login().then(() => console.log("Ego logged in"));
