@@ -12,12 +12,12 @@ const client = new Client();
 interface IUser extends Document {
     discordId: string;
     ego: number;
-}
+};
 
 const Model = model<IUser>("User", new Schema ({
     discordId: String,
     ego: Number,
-}))
+}));
 
 client.on("message", async message => {
     const mentions = message.mentions.users.array();
