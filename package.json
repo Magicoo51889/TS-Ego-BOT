@@ -1,7 +1,7 @@
 {
   "name": "ts-ego",
   "version": "1.0.0",
-  "description": "",
+  "description": "Created with [create-ts-pro](https://github.com/Milo123459/create-ts-pro)",
   "main": "index.ts",
   "scripts": {
     "test": "ts-node-dev --respawn --transpile-only --poll ./src/index.ts",
@@ -55,5 +55,13 @@
   },
   "dependencies": {
     "mongoose": "^6.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Magicoo51889/TS-Ego-BOT.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Magicoo51889/TS-Ego-BOT/issues"
+  },
+  "homepage": "https://github.com/Magicoo51889/TS-Ego-BOT#readme"
 }
