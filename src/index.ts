@@ -7,7 +7,7 @@ connect("mongodb+srv://Magicoo51889:<1tgw6K1CquZC5Cj3>@cluster0.7xetp.mongodb.ne
   useUnifiedTopology: true,
 }).then(() => console.log("Ego is connected to MongoDB"));
 
-const client = new Client(null);
+const client = new Client();
 
 interface IUser extends Document {
   discordId: string;
@@ -19,7 +19,7 @@ const Model = model<IUser>("User", new Schema({
   ego: Number,
 }))
 
-Client.on("message", async message => {
+client.on("message", async message => {
   const mentions = message.mentions.users.array();
 
   if (message.content.includes("ego") && !message.content.startsWith("%ego") && mentions.length > 0) {
